@@ -1,0 +1,109 @@
+/* CSS-RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS-CSS */
+:root{
+  font-size: 62.5%;
+  --bg-body: #f7f7f7;
+  --bg-card: #E1E1E6;
+  --bg-hover: #02799D;
+}
+
+body{
+  background-color: var(--bg-body);
+  font-family: 'Roboto', sans-serif;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+section .time, section .controls{
+  margin-bottom: 4.8rem;
+}
+
+.container{
+  width: 40rem;
+  margin: 0 auto;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+/* FORMATAÇÃO SEÇÃO => TIME */
+section .time span{
+  font-size: 12rem;
+}
+
+/* FORMATAÇÃO SEÇÃO => CONTROLS */
+section .controls{
+  display: flex;
+  gap: 4rem;
+}
+
+section .controls button{
+  cursor: pointer;
+}
+
+section .controls button:hover svg path{
+  fill: var(--bg-hover);
+}
+
+/* FORMATAÇÃO SEÇÃO => SONS */
+section .sons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  width: 30.8rem;
+}
+
+section .sons button{
+  background-color: var(--bg-card);
+  border-radius: 24px;
+  cursor: pointer;
+  width: 13.8rem;
+  height: 15.2rem ;
+}
+
+section .sons button:hover svg path{
+  fill: white;
+}
+
+section .sons button:focus svg path{
+  fill: white;
+}
+
+section .sons button:hover{
+  background-color: var(--bg-hover);
+}
+
+.active {
+  background-color: var(--bg-hover) !important;
+  fill: white;
+}
+
+@media (min-width: 1024px){
+
+  .container{
+    width: 82.1rem;
+  }
+
+  main{
+    flex-direction: row;
+  }
+
+  section .controls{
+    margin-bottom: 0;
+  }
+
+}
