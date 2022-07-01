@@ -1,4 +1,6 @@
-![alt text](capa.PNG)
+![alt text](capa-light.png)
+![alt text](capa-dark-mode.png)
+
 
 # Focus Timer
 
