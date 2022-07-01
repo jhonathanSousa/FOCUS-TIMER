@@ -8,17 +8,23 @@ const buttonStop = document.querySelector('#stop');
 const buttonMore = document.querySelector('#more');
 const buttonLess = document.querySelector('#less');
 
-// SECIONANDO BUTTON DE CONTROLE DE AUDIO
+// SECIONANDO BUTTON DE CONTROLE DE ÁUDIO
 const buttonForest = document.querySelector('#sonOne');
 const buttonRain = document.querySelector('#sonTwo');
 const buttonCoffeeShop = document.querySelector('#sonThree');
 const buttonFireplace = document.querySelector('#sonFour');
 
+// BUTTONS DE CONTROLE DE ÁUDIO
+const buttonVolumeForest = document.querySelector('#volume-forest');
+const buttonVolumeRain = document.querySelector('#volume-rain');
+const buttonVolumeCoffeeShop = document.querySelector('#volume-coffee-shop');
+const buttonVolumeFireplace = document.querySelector('#volume-fireplace');
+
 // AUDIOS DO CONTROLE
-let audioForest = new Audio("assets/audios/Floresta.wav");
-let audioRain = new Audio('assets/audios/Chuva.wav');
-let audioCoffeeShop = new Audio('assets/audios/Cafeteria.wav');
-let audioFireplace = new Audio('assets/audios/Lareira.wav');
+const audioForest = new Audio("assets/audios/Floresta.wav");
+const audioRain = new Audio('assets/audios/Chuva.wav');
+const audioCoffeeShop = new Audio('assets/audios/Cafeteria.wav');
+const audioFireplace = new Audio('assets/audios/Lareira.wav');
 
 // VARIÁVEIS QUE INICIAM VAZIAS
 let minutes;
@@ -88,6 +94,10 @@ buttonForest.addEventListener('click', function(){
   buttonRain.classList.remove('active');
   buttonCoffeeShop.classList.remove('active');
   buttonFireplace.classList.remove('active');
+
+  buttonVolumeForest.addEventListener("change", function(e) {
+    audioForest.volume = e.currentTarget.value / 100;
+  });
 });
 
 buttonRain.addEventListener('click', function(){
@@ -101,6 +111,9 @@ buttonRain.addEventListener('click', function(){
   buttonCoffeeShop.classList.remove('active');
   buttonFireplace.classList.remove('active');
 
+  buttonVolumeRain.addEventListener("change", function(e) {
+    audioRain.volume = e.currentTarget.value / 100;
+  });
 });
 
 buttonCoffeeShop.addEventListener('click', function(){
@@ -113,6 +126,10 @@ buttonCoffeeShop.addEventListener('click', function(){
   buttonForest.classList.remove('active');
   buttonRain.classList.remove('active');
   buttonFireplace.classList.remove('active');
+
+  buttonVolumeCoffeeShop.addEventListener("change", function(e) {
+    audioCoffeeShop.volume = e.currentTarget.value / 100;
+  });
   
 });
 
@@ -126,4 +143,9 @@ buttonFireplace.addEventListener('click', function(){
   buttonForest.classList.remove('active');
   buttonRain.classList.remove('active');
   buttonCoffeeShop.classList.remove('active');
+
+  buttonVolumeFireplace.addEventListener("change", function(e) {
+    audioFireplace.volume = e.currentTarget.value / 100;
+  });
 });
+

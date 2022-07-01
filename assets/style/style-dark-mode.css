@@ -1,0 +1,50 @@
+/* FORMATAÇÃO DIV => DARK-MODE */
+.dark-mode{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+  margin-bottom: 12rem;
+}
+
+.dark-mode button{
+  cursor: pointer;
+}
+
+.dark-mode-on{
+  background-color: #121214;
+  color: white;
+}
+
+.dark-mode-off{
+  background-color: white;
+}
+
+.hide{
+  display: none;
+}
+
+/* FORMATAÇÃO CARD => DARK-MODE */
+.card-dark-mode{
+  background-color: #29292E !important;
+}
+
+.card-dark-mode:hover , .card-dark-mode:focus{
+  background-color: #0A3442 !important;
+}
+
+.svg-card-mode svg path{
+  fill: #C4C4CC;
+}
+
+.buttonSon, .buttonSon::-webkit-slider-thumb {
+  background:  white !important;
+}
+
+
+@media (min-width: 1024px){
+  .dark-mode{
+    margin: 0;
+    padding: 6rem;
+  }
+}

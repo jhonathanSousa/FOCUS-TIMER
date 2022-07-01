@@ -37,7 +37,7 @@ main{
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
+  height: 70vh;
 }
 
 /* FORMATAÇÃO SEÇÃO => TIME */
@@ -72,7 +72,16 @@ section .sons button{
   border-radius: 24px;
   cursor: pointer;
   width: 13.8rem;
-  height: 15.2rem ;
+  height: 15.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section .sons button .volume{
+  width: 70%;
+  margin-top: 3.2rem;
 }
 
 section .sons button:hover svg path{
@@ -85,6 +94,37 @@ section .sons button:focus svg path{
 
 section .sons button:hover{
   background-color: var(--bg-hover);
+}
+
+section .sons button input[type = range]{
+  background-color: #323238;
+  border-radius: 5px;
+  height: 4px;
+  -webkit-appearance: none;
+}
+
+section .sons button:hover input[type = range]{
+  background-color: #fff;
+}
+
+section .sons button:focus input[type = range]{
+  background-color: #fff;
+}
+
+section .sons button input[type=range]::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background:  #323238;
+  -webkit-appearance: none;
+}
+
+section .sons button:hover input[type=range]::-webkit-slider-thumb {
+  background-color: #fff;
+}
+
+section .sons button:focus input[type=range]::-webkit-slider-thumb {
+  background-color: #fff;
 }
 
 .active {
