@@ -5,6 +5,8 @@
 
 Criação de cronômetro baseado no pomodoro, utlizando a linguagem JavaScript.
 
+Link do projeto: https://project-focus-timer.vercel.app/
+
 ## Tecnologias utilizas:
 
 - HTML5;
