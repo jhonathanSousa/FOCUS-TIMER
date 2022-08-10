@@ -3,21 +3,26 @@
 
 # Focus Timer
 
-Criação de cronômetro baseado no pomodoro, utlizando a linguagem JavaScript.
+Practicing what I have learned about javascript, I created the focus timer.
 
-Link do projeto: https://project-focus-timer.vercel.app/
+## 🚀 Technologies :
 
-## Tecnologias utilizas:
+**Front-end:** HTML5, CSS3 and JAVASCRIPT;
 
-- HTML5;
-- CSS3;
-- JAVASCRIPT;
+## 👩‍💻 Functionalities:
 
-## Funcionalidades:
+- Add more time (5 minutes);
+- Decrease the time (5 minutes);
+- Play and Pause;
+- Choose from four sounds to play in the background;
+- Increase and decrease the sound volume;
+- Light or dark background option (dark mode);
 
-- Adicionar mais tempo (5 minutos)
-- Dimiuir o tempo (5 minutos);
-- Play e Pause;
-- Escolher entre quatro sons, para tocar de fundo;
-- Aumentar e abaixar o volume do som;
-- Opção de fundo claro ou escuro (dark-mode);
+## 💻 How to use :
+
+Project Link : https://project-focus-timer.vercel.app/
+
+## 👨 Author :
+
+[@jhonathanSousa](https://www.linkedin.com/in/jhonathan-alves-sousa/)
+
